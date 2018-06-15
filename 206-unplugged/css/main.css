@@ -1,0 +1,881 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ==========================================================================
+*/
+
+/* ==========================================================================
+   Global Text styles
+    ==========================================================================
+*/  
+    body, html{
+        font-family: 'Source Sans Pro', sans-serif;
+        font-size:16px;
+        color: #222222;
+        background-color:#ededed;
+    }
+
+    h1, h2, h3, h4{
+        font-weight:700; /*bold*/
+    }
+
+    h1{
+        font-size:1.4em; 
+        line-height: 1.6;
+    }
+
+    h2{
+        font-size:1em;
+    }
+
+    a{
+        font-weight:700;/*bold*/
+        color:#23a4cc;
+        text-decoration:none;
+    }
+
+    p{
+       font-size:1em;
+       line-height: 1.45; /* using the golden ratio*/
+    }
+
+    /* styles for images */
+    figure{
+        margin:0;
+    }
+
+    img{
+        width:100%;
+        height:auto;
+    }
+
+    /* styles for buttons */
+    .btn{
+        background-color:#b11d49;
+        border:none;
+        box-shadow:2px 2px 0px #ababab;
+        color:#ffffff;
+        display:block;
+        font-weight:700;
+        height:2.5em; 
+        line-height:2.5;
+        text-align:center;
+        text-transform:uppercase;
+        width:100%;       
+    }
+
+    .btn i{
+        padding-right:10px;
+    }
+
+    /* styles for the input field */
+    input{
+        background-color: #ffffff;
+        border:2px solid #e5e5e5;
+        height:2.1825em;
+        margin-bottom:2%;
+        width:99.5%;
+    }
+
+    input.btn{
+        background-color:#ff1155;
+    }
+
+    /*removes the border from the last item in the news or faqs feed */
+    .last-item{
+        border-bottom:none !important;
+    }
+
+
+/* ==========================================================================
+   Global Header and Footer styles
+   ==========================================================================
+*/   
+
+/*Header and navigation styles - mobile first*/
+
+.main-header{
+    /* Set the header (the area with the logo) to fill the full width of the screen */
+    width:100%;
+    margin:auto;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #dddddd;
+}
+
+.logo{
+    width:100%;
+    margin:0 auto;
+}
+
+nav{
+    /* Set the nav to fit the full width of the screen */
+    width:100%;   
+   /* background-color: #dddddd;*/
+}
+
+nav ul{
+    list-style: none;
+    padding:0;
+}
+
+nav ul li {
+    border-bottom: 1px solid #cfcaca;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul li a{
+    color:#222222;
+    font-size:1.125em;
+    text-transform: uppercase;    
+}
+
+nav i{
+    padding-right:10px;
+}
+
+/* Main Section */
+main{
+    /*this section is just in from the edge of the screen. all the content is centered and some padding is added.*/ 
+    width:96%;
+    padding: 0 2%;
+    margin:auto;
+    clear:both;
+    max-width:960px;
+}
+
+/*Footer styles*/
+
+footer{
+    /* Set the footer to fill the full width of the screen. The footer and its contents are centered. */
+    border-top:2px solid #cbcbcb;
+    clear:both;
+    /*margin:auto;*/
+    margin-top:20px;
+    padding-top:20px;
+    width:100%;
+}
+
+.footer-logo{
+    width:47.5%;
+    margin:auto;
+}
+
+
+/* ==========================================================================
+  Home page styles
+   ==========================================================================
+   /
+
+/*Hero area */
+/*.hero-area{
+    width:100%;
+}*/
+
+.top-story{
+    width:100%;
+    border-bottom:1px solid #cbcbcb;
+}
+
+.top-img{
+    width:100%;
+    margin:0;
+}
+
+.top-img img{
+    width:100%;
+}
+
+/*Side-bar area - only the newsletter sign-up is displayed on a mobile*/
+.sidebar{
+   width:100%; 
+}
+
+.sidebar-newsletter{
+    border-bottom:1px solid #cbcbcb;
+    padding:0 10px 20px 0px;
+}
+
+.sidebar-newsletter input{
+    width:100%;
+    box-sizing:border-box;
+}
+
+.sidebar-newsletter input [type="text"]{
+    margin-bottom: 10px;
+    padding:5px;
+}
+
+.sidebar-about-us,
+.sidebar-faqs{
+    display:none;
+}
+
+/*News feed area*/
+.feed{
+    width:100%;
+}
+
+.feed p{
+    display:none;
+}
+
+.feed-item{
+    clear:both;
+    border-bottom:1px solid #cbcbcb;
+    padding-bottom:20px;
+}
+
+.feed-item h2{
+    margin:0;
+}
+
+.feed-item h2, a{   
+    color: #222222;
+}
+
+.feed-type{
+    text-transform:uppercase;
+    font-size:0.8em;
+}
+
+.feed-img{
+    width:45%;
+    float:left;
+    padding-right:3%;
+    margin:0;
+}
+
+
+/* ==========================================================================
+  About page styles
+   ==========================================================================
+/
+/*Contact info area*/
+.contact-info{
+    width:100%;
+    padding-bottom:30px;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding:0;
+}
+
+.contact-info ul li{
+    /*display line items side by side and align the tops of each item*/
+    display:inline-block;
+    vertical-align:top;
+}
+
+.contact-info span{
+    font-weight:700;
+}
+
+/* contact map*/
+.map-container{
+    position:relative; /* lets us set the position of the map to absolute at a later stage */
+    padding-bottom:75%; /*allows us to keep the aspect ratio height/width */
+    height:0;
+    overflow:hidden; /* doesn't get bigger than the container*/
+}
+
+.map-container iframe{
+    position: absolute; /* will let us display the height*/
+    top:0;
+    left:0; /* top and left allows us to fill the container*/
+    width:100%;
+    height:100%;
+}
+
+/* mission area*/
+.strong{
+    font-weight:700;
+}
+
+.mission{
+    width:100%;
+}
+
+
+/*Team members area*/
+
+.team-member{
+    padding: 15px 0;
+    clear:both;
+}
+
+.team .team-img{
+    width:40%;
+    padding-bottom:40%;
+    float:left;
+    margin-right:20px;
+    border:1px solid #cccccc;
+}
+
+.team-name{
+    margin-bottom:0;
+}
+
+.team-title{
+    margin-top:0;
+}
+
+.team-description{
+    display:none;
+}
+
+/* ids for each team member */
+#team-img-jack{
+    background: #333333 url('../img/jacksmith.jpg') center no-repeat;
+    background-size:cover;
+}
+
+#team-img-lana{
+    background: #333333 url('../img/lanawalters.jpg') center no-repeat;
+    background-size:cover;
+}
+
+#team-img-willow{
+    background: #333333 url('../img/willowwhite.jpg') center no-repeat;
+    background-size:cover;
+}
+
+
+/* ==========================================================================
+  FAQs page styles
+   ==========================================================================
+/
+/*FAQs info area*/
+
+.faqs-item{
+    border-bottom: 1px solid #cbcbcb;
+}
+
+.faqs-item h3{
+    font-weight:400;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width:768px){
+    /* Tablet breakpoint styles go there */
+
+    /* HEADER, NAV and FOOTER */
+
+    /* Header and navigation styles - both the logo and navigation menu appear on the same line next to each other*/
+    .main-header{
+        width:100%;
+        margin:auto;
+        padding:0 3%;
+    }
+
+    .main-header .header-wrapper{
+        width:94%;
+        max-width:960px;
+        margin: 0 auto;
+    }
+
+    .logo{
+        width:40%;
+        float:left;
+    }
+
+    .logo img{
+        max-width: 312px;
+    }
+
+    nav{
+        width:60%;
+        float:left;
+    }
+
+    nav ul{
+        margin:0;
+        padding:40px 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        border:none;
+        display: inline;
+        padding:0 2%;
+        position:relative;
+    }
+
+    /* Footer styles - logo is now resized*/
+    .footer-logo{
+        /*clear:both;*/
+        width:30%;
+        margin:auto;
+    }
+
+    /* HOME PAGE */
+
+    /* Hero area styles - the photo and news feature are side by side across the screen*/
+    .top-story{
+        width:100%;
+        padding-top:30px;
+        padding-bottom:30px;
+    }
+
+    .top-img{
+        width:57%;
+        float:left;
+        padding-right:3%;
+    }
+
+    .top-info{
+        width:40%;
+        float:left;
+    }
+
+    /* Side-bar styles - newsletter, about us and faqs are now all visible on the tablet. They are displayed to the right of the Recent News feed section*/
+    .sidebar{
+        clear:both;
+        width:37%;
+        float:right;
+    }
+
+    .sidebar-newsletter,
+    .sidebar-about-us,
+    .sidebar-faqs{
+        display:block;
+        border-bottom:1px solid #cbcbcb;
+        padding:0 10px 20px 10px;
+    }
+
+    /* Recent News feed styles - now displayed to the left of the screen and across more than half of the screen therefore img and description need to be resized*/
+    .feed{
+        border-right:1px solid #cbcbcb;
+        width:60%;
+        float:left;
+    }
+
+    .feed h2{
+        font-size:1.125em;
+    }
+
+    .feed-img{
+        width:35%;
+    }
+
+    .feed-item{
+        padding-right:20px;
+    }
+
+    /* ABOUT US PAGE */
+
+    /*Contact info area*/
+    .contact-info{
+        width: 40%;
+        float:left;
+    }
+
+    .map-container {
+        position: relative;
+        padding-bottom: 40%;
+        height: 0;
+        overflow: hidden;
+        width: 58%;
+        float: left;
+        border: 1px solid #000000;
+        margin-bottom: 40px;
+        margin-top: 30px;
+      }
+
+      .map-container iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+
+    /*Mission area*/
+    .mission{
+        border-bottom:1px solid #cbcbcb;
+        border-top:1px solid #cbcbcb;
+        padding:15px 0;
+        clear:both;
+    }
+
+    .team{
+        padding-top:20px;
+     /*   margin-bottom:20px;*/
+    }
+
+    .team-member{
+        padding:15px 0;
+    }
+
+    .team-img {
+        width: 20%;
+        padding-bottom: 20%;
+        margin-right: 10%;
+    }
+
+}
+
+@media only screen and (min-width:940px){
+    /* Desktop breakpoint styles go there */
+
+    h1{
+        font-size:1.6em;
+        line-height: 1.8;
+    }
+
+    h2{
+        font-size: 1.4em;
+    }
+
+    .main-header{
+        background-color: #dddddd;
+    }
+
+    /* HOME PAGE */
+
+    /* Hero area styles - this section now contains hero area and sidebar*/
+    .top-story{
+        width:65%;
+        float:left;
+        padding-right:2%;
+        border:none;
+    }
+
+    .top-img{
+        width:100%;
+        padding-bottom: 1em;
+    }
+
+    .top-img img{
+        max-width:620px;
+    }
+  
+    .top-info{
+        width:100%;
+        float:none;
+    }
+
+
+    /* Side-bar styles - newsletter, about us and faqs are now all visible on the tablet. They are displayed to the right of the hero section*/
+    .sidebar{
+        clear:none;
+        width:30%;
+        float:right;
+        border-left: 1px solid #cbcbcb;
+    }
+
+    .sidebar-newsletter,
+    .sidebar-about-us,
+    .sidebar-faqs {
+      padding: 0 20px 20px 20px;
+    }
+  
+    .sidebar-faqs {
+      border: none;
+    }
+
+    /* Recent News feed styles - now displayed at the bottom of the screen*/
+    .feed{
+        clear:both;
+        width:100%;
+        float:none;
+        border-top:1px solid #cbcbcb;
+        border-right:none;
+        padding-top:20px;
+    }
+
+    .feed p{
+        display:block;
+        margin-top:0;
+    }
+
+    .feed h2{
+        margin:0;
+    }
+
+    .feed-img{
+        width:20%;        
+    }
+
+    
+    /*ABOUT US PAGE*/
+    /*Team member bios are now displayed*/   
+
+    /*
+    .team-member{
+        margin-bottom:2%;
+    }*/
+    
+    .team-img{
+        margin-right: 5%;
+    }
+
+    .team-name{
+        margin-top:0;
+    }
+
+    .team-description{
+        display:block;
+    }
+
+    .footer-logo{
+        width:20%;
+    }
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
